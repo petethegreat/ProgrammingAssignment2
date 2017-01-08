@@ -8,7 +8,7 @@
 makeCacheMatrix <- function(x = matrix()) {
 
 	#thematrix<<-x
-	theInverse<<-NULL
+	theInverse<-NULL # this should assigne in the current environment, not the parent. Pointed out by Malte during grading
 	get<-function()
 	{
 		#return(thematrix)
